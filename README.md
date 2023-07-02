@@ -4,7 +4,7 @@ This Flask application allows users to input two text inputs such as no.of compa
 
 The project utilizes Flask, a lightweight web framework, to handle HTML templates' backend logic and rendering. The application consists of two HTML templates: `index.html` for the input form and `result.html` to display the prediction results.
 
-This is my demo vedio ![Video Description](https://drive.google.com/file/d/1H5t8ERt-BDgnq2Q_uyzWpmEIOHwig1qW/view?usp=sharing)
+This is my demo video [demo](https://drive.google.com/file/d/1H5t8ERt-BDgnq2Q_uyzWpmEIOHwig1qW/view?usp=sharing)
 
 
 ## Installation
