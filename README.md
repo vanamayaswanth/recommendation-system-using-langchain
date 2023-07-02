@@ -11,7 +11,7 @@ To run the application, follow these steps:
 1. Clone the repository or download the source code.
 2. Install the required dependencies using `pip`:
    ```
-   pip install flask
+   pip install flask pandasai 
    ```
 3. Obtain the necessary OpenAI API key to access the language model.
 4. Update the Flask application code (`app.py`) with your OpenAI API key.
