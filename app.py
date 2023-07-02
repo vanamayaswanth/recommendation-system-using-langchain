@@ -22,7 +22,7 @@ def predict():
     pandas_ai = PandasAI(llm, verbose=True)
     response = pandas_ai(df, f"give me {n_recc} companies from {ind_type} Industry")
    
-    
+    print(response)
     return render_template('result.html', prediction=response.to_list())
 
 if __name__ == '__main__':
