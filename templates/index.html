@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Text Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Text</h1>
+        <form action="/predict" method="post">
+            <input type="number" name="No.of Recommendations" placeholder="No.of Recommendations" required><br><br>
+            <input type="text" name="Industry" placeholder="Industry" required><br><br>
+            <input type="submit" value="Predict">
+        </form>
+    </div>
+</body>
+</html>
+
