@@ -1,10 +1,10 @@
 # recommendation-system-using-langchain
 
-This Flask application allows users to input two text inputs such as no.of companies they would like to see for results and the type of the Industry they would like {"Technology, Oil, etc }  and receive prediction results based on the provided inputs. The application has a simple user interface where users can enter their inputs and view the prediction results on a separate page.
+This Flask application allows users to input two text inputs such as no.of recommendation he likes and the Relevant search box  they would like {"Technology, Microsoft and any related search }  and receive prediction results based on the provided inputs. The application has a simple user interface where users can enter their inputs and view the prediction results on a separate page.
 
 The project utilizes Flask, a lightweight web framework, to handle HTML templates' backend logic and rendering. The application consists of two HTML templates: `index.html` for the input form and `result.html` to display the prediction results.
 
-This is my demo video [please start watching after 6th sec](https://drive.google.com/file/d/1H5t8ERt-BDgnq2Q_uyzWpmEIOHwig1qW/view?usp=sharing)
+This is my demo video [please start watching after the 6th sec](https://drive.google.com/file/d/1H5t8ERt-BDgnq2Q_uyzWpmEIOHwig1qW/view?usp=sharing)
 
 ## Example : 
 
