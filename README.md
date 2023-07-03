@@ -19,7 +19,11 @@ This is a perfect example of the above recommendation system by lang-chain, The 
 	<a href='#'><img src='approch_2.jpg' alt='LGT Logo' width='60%' /></a>
 </p>
 
-This is 2nd approach to search for a search, Where it is LLM and lang-chain it understands the user language easily 
+This is 2nd approach to search for a search, Where it is LLM and lang-chain it understands the user language easily  and provides the results such as : 
+
+<p align='center'>
+	<a href='#'><img src='2nd app output.jpg' alt='LGT Logo' width='60%' /></a>
+</p>
 
 ## Installation
 
