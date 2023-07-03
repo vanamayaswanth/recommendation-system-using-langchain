@@ -1,6 +1,6 @@
 # Query-search-using-langchain
 
-This Flask application allows users to input two text inputs such as no.of companies you would like to see for results and type of the Industry you would like {"Technology, Oil, etc }  and receive prediction results based on the provided inputs. The application has a simple user interface where users can enter their inputs and view the prediction results on a separate page.
+This Flask application allows users to input two text inputs such as no.of companies they would like to see for results and the type of the Industry they would like {"Technology, Oil, etc }  and receive prediction results based on the provided inputs. The application has a simple user interface where users can enter their inputs and view the prediction results on a separate page.
 
 The project utilizes Flask, a lightweight web framework, to handle HTML templates' backend logic and rendering. The application consists of two HTML templates: `index.html` for the input form and `result.html` to display the prediction results.
 
@@ -12,8 +12,14 @@ This is my demo video [please start watching after 6th sec](https://drive.google
 	<a href='#'><img src='example.jpg' alt='LGT Logo' width='60%' /></a>
 </p>
 
-This is a perfect example for the above recommendation system by lang-chain, The dataset which I have initially is `companines` does not contain any data regarding the `industry _type ` or any info but I used the open-ai to create the industry_type now the question still I dont have info on the companies that have AR/VR so here I use `lang-chain` SO, it will understand the content and give the relevant companies that are using the AR/VR in the companies: Such as `ARKO` is Tech company but they use AR/VR too.SO the model predict it is similar and used it 
+This is a perfect example of the above recommendation system by lang-chain, The dataset which I have initially was `companies.csv` does not contain any data regarding the `industry _type ` or any info but I used the open-ai to create the industry_type now the question still I dont have info on the companies that have AR/VR so here I use `lang-chain` SO, it will understand the content and give the relevant companies that are using the AR/VR in the companies: Such as `ARKO` is Tech company but they use AR/VR too. So the model predict it is similar and used it 
 
+# 2nd approach
+<p align='center'>
+	<a href='#'><img src='approch_2.jpg' alt='LGT Logo' width='60%' /></a>
+</p>
+
+This is 2nd approach to search for a search, Where it is LLM and lang-chain it understands the user language easily 
 
 ## Installation
 
