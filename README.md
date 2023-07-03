@@ -6,6 +6,14 @@ The project utilizes Flask, a lightweight web framework, to handle HTML template
 
 This is my demo video [please start watching after 6th sec](https://drive.google.com/file/d/1H5t8ERt-BDgnq2Q_uyzWpmEIOHwig1qW/view?usp=sharing)
 
+## Example : 
+
+<p align='center'>
+	<a href='#'><img src='example.jpg' alt='LGT Logo' width='60%' /></a>
+</p>
+
+This is a perfect example for the above recommendation system by lang-chain, The dataset which I have initially is `companines` does not contain any data regarding the `industry _type ` or any info but I used the open-ai to create the industry_type now the question still I dont have info on the companies that have AR/VR so here I use `lang-chain` SO, it will understand the content and give the relevant companies that are using the AR/VR in the companies: Such as `ARKO` is Tech company but they use AR/VR too.SO the model predict it is similar and used it 
+
 
 ## Installation
 
