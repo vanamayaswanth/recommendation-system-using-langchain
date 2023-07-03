@@ -1,4 +1,4 @@
-# Query-search-using-langchain
+# recommendation-system-using-langchain
 
 This Flask application allows users to input two text inputs such as no.of companies they would like to see for results and the type of the Industry they would like {"Technology, Oil, etc }  and receive prediction results based on the provided inputs. The application has a simple user interface where users can enter their inputs and view the prediction results on a separate page.
 
