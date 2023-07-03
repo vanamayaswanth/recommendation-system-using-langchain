@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Prediction</title>
+    <title>Recommendation System</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+        }
+        
+        h1 {
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        .form-label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+        
+        .form-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        
+        .form-button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
-        <center>
-        <h1>Choose your Recommendation's</h1>
-        </center>
-        <form action="/predict" method="post">
-            <input type="number" name="No.of Recommendations" placeholder="No.of Recommendations" required><br><br>
-            <input type="text" name="Industry" placeholder="Industry" required><br><br>
-            <input type="submit" value="Predict">
+        <h1>Recommendation System</h1>
+        <form method="POST" action="/predict">
+            <div class="form-group">
+                <label class="form-label" for="recommendations">Number of Recommendations:</label>
+                <input class="form-input" type="number" id="recommendations" name="recommendations" required>
+            </div>
+            <div class="form-group">
+                <label class="form-label" for="industry">Industry:</label>
+                <input class="form-input" type="text" id="industry" name="industry" required>
+            </div>
+            <button class="form-button" type="submit">Get Recommendations</button>
         </form>
     </div>
 </body>
 </html>
-

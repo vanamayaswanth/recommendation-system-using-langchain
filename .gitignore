@@ -1,3 +1,9 @@
 cache/
 lrs/
 *.log
+*.chroma
+apps.py
+indexs.html
+resultssss.html
+langchain.ipynb
+company_type.json

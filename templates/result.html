@@ -1,8 +1,7 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Text Prediction Result</title>
+    <title>Recommendation Results</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <style>
         .container {
@@ -31,22 +30,10 @@
 </head>
 <body>
     <div class="container">
-        <h1>Prediction Result</h1>
+        <h1>Recommendation Results</h1>
         <ul>
-            {% macro display_dict(dict_obj) %}
-                {% for key, value in dict_obj.items() %}
-                    <li><strong>{{ key }}:</strong>
-                    {% if value is mapping %}
-                        <ul>{{ display_dict(value) }}</ul>
-                    {% else %}
-                        {{ value }}
-                    {% endif %}
-                    </li>
-                {% endfor %}
-            {% endmacro %}
-            {{ display_dict(prediction) }}
+            {{result}}
         </ul>
     </div>
 </body>
 </html>
-
