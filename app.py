@@ -18,12 +18,12 @@ def predict():
 
     df = pd.read_csv("data.csv")
 
-    llm = OpenAI(api_token="...")
+    llm = OpenAI(api_token="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")
     pandas_ai = PandasAI(llm, verbose=True)
-    response = pandas_ai(df, f"give me {n_recc} companies from {ind_type} Industry")
+    response = pandas_ai(df, f"give me {n_recc} companies from {ind_type} Industry from the above dataframe")
    
     print(response)
-    return render_template('result.html', prediction=response.to_list())
+    return render_template('result.html', prediction=response.to_dict())
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run()

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,38 +19,32 @@
             color: #333;
         }
         
-        .result-list {
-            list-style-type: none;
-            padding: 0;
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
         }
         
-        .result-list li {
+        li {
             margin-bottom: 10px;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .result-list li:first-child {
-            border-top-left-radius: 0;
-            border-top-right-radius: 0;
-        }
-
-        .result-list li:last-child {
-            border-bottom-left-radius: 0;
-            border-bottom-right-radius: 0;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Prediction Result</h1>
-        <ul class="result-list">
-            {% for item in prediction %}
-            <li>{{ item }}</li>
-            {% endfor %}
+        <ul>
+            {% macro display_dict(dict_obj) %}
+                {% for key, value in dict_obj.items() %}
+                    <li><strong>{{ key }}:</strong>
+                    {% if value is mapping %}
+                        <ul>{{ display_dict(value) }}</ul>
+                    {% else %}
+                        {{ value }}
+                    {% endif %}
+                    </li>
+                {% endfor %}
+            {% endmacro %}
+            {{ display_dict(prediction) }}
         </ul>
     </div>
 </body>
